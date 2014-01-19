@@ -167,6 +167,27 @@ leonardo.build.variant=leonardo
 
 ##############################################################
 
+kbpm.name=Kegboard Pro Mini
+kbpm.upload.protocol=avr109
+kbpm.upload.maximum_size=28672
+kbpm.upload.speed=57600
+kbpm.upload.disable_flushing=true
+kbpm.bootloader.low_fuses=0xff
+kbpm.bootloader.high_fuses=0xd8
+kbpm.bootloader.extended_fuses=0xcb
+kbpm.bootloader.path=caterina
+kbpm.bootloader.file=Caterina-KegboardProMini.hex
+kbpm.bootloader.unlock_bits=0x3F
+kbpm.bootloader.lock_bits=0x2F
+kbpm.build.mcu=atmega32u4
+kbpm.build.f_cpu=16000000L
+kbpm.build.vid=0x03eb
+kbpm.build.pid=0x0436
+kbpm.build.core=arduino
+kbpm.build.variant=leonardo
+
+##############################################################
+
 esplora.name=Arduino Esplora
 esplora.upload.protocol=avr109
 esplora.upload.maximum_size=28672
