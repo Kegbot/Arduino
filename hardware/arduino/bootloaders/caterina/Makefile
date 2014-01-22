@@ -401,6 +401,9 @@ AVRDUDE_FLAGS += $(AVRDUDE_NO_VERIFY)
 AVRDUDE_FLAGS += $(AVRDUDE_VERBOSE)
 AVRDUDE_FLAGS += $(AVRDUDE_ERASE_COUNTER)
 
+# KBPM
+AVRDUDE_FLAGS += -u -U lfuse:w:0xff:m -U hfuse:w:0xd0:m -U efuse:w:0xcb:m
+
 
 
 #---------------- Debugging Options ----------------
